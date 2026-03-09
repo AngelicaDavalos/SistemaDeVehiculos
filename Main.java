@@ -1,5 +1,5 @@
-public class Main (){
-    public Static void main (String[]args ){
+public class  Main {
+    public static void main (String[]args ){
         PedirDatos pd = new PedirDatos();
         int opcion ; 
 
@@ -16,12 +16,48 @@ public class Main (){
                 System.out.println("BYE");
             }else {
                 switch (opcion){
-                    
+                    case 1 : 
+                    String marca = pd.pedirCadena("Ingresa la marca  ");
+                    String modelo = pd.pedirCadena("Ingresa el modelo  ");
+                    int anio = pd.pedirEntero("Ingresa el año en que salio  ");
+                    double precio = pd.pedirDecimal("Ingresa el precio  ");
+                    int puertas = pd.pedirEntero("Ingrese el numero de puertas que tiene  ");
+                    String combustible = pd.pedirCadena("Ingrese el tipo de combustible  ");
+                    Auto auto = new Auto(marca,modelo,anio,precio,puertas,combustible);
+
+                    auto.mostrarInfo();
+                    auto.tocarClaxon();
+                    auto.mostrarPuertas();
+
+                    break;
+
+                    case 2 : 
+                     String marca1 = pd.pedirCadena("Ingresa la marca  ");
+                     String modelo1 = pd.pedirCadena("Ingresa el modelo  ");
+                     int anio1 = pd.pedirEntero("Ingresa el año en que salio  ");
+                     double precio1 = pd.pedirDecimal("Ingresa el precio  ");
+                     int carga = pd.pedirEntero("Ingrese la capacidad de carga  ");
+                     int ejes = pd.pedirEntero("Ingrese el numero de ejes  ");
+                     Camion camion = new Camion(marca1, modelo1, anio1, precio1 , carga, ejes );
+
+                     camion.mostrarInfo();
+                     camion.cargarMercancia();
+                     camion.mostrarCapacidad();
+
+                     break;
+
+                     case 3 :
+
+                     System.out.println("Total de vehiculos creados   "+Vehiculo.totalVehiculos);
+                     break;
+                    default:
+                    System.out.println("Opcion invalida ");
+
                 }
             }
 
 
 
-        }while ();
+        }while (opcion != 4);
     }
 }

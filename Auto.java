@@ -4,7 +4,7 @@ public class Auto extends Vehiculo{
 
     //constructor
      public Auto (String marca, String modelo, int anio, double precio, int numeroPuertas, String tipoCombustible){
-        super(marca.modelo,anio,precio);
+        super(marca,modelo,anio,precio);
         this.numeroPuertas=numeroPuertas;
         this.tipoCombustible=tipoCombustible;
      }
@@ -14,6 +14,6 @@ public class Auto extends Vehiculo{
         System.out.println("El auto "+getMarca()+" toca el claxon");
      }
      public void mostrarPuertas(){
-        System.out.println("Numero de puertas que tiene el auto  "+this.mostrarPuertas);
+        System.out.println("Numero de puertas que tiene el auto  "+this.numeroPuertas);
      }
 }

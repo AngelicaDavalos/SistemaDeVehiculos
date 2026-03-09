@@ -3,7 +3,7 @@ public class Vehiculo {
     private String modelo;
     private int anio ; 
     private double precio ; 
-    public Static int totalVehiculos =0;
+    public static int totalVehiculos =0;
     
     //costructores 
     public Vehiculo(){
@@ -20,16 +20,16 @@ public class Vehiculo {
 
 
     //setters
-    public setMarca (String marca){
+    public void setMarca (String marca){
         this.marca=marca;
     }
-    public setModelo (String modelo){
+    public void setModelo (String modelo){
         this.modelo=modelo;
     }
-    public setAnio(int anio){
+    public void setAnio(int anio){
         this.anio=anio;
     }
-    public SetPrecio(double precio){
+    public void SetPrecio(double precio){
         this.precio=precio;
     }
 
