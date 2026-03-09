@@ -47,7 +47,10 @@ public class Vehiculo {
      public void aplicarDescuento(){
         double descuento = precio*.10;
         System.out.println("El descuento es de "+descuento);
-     }
+        double total= precio - descuento;
+        System.out.println("El total es de  "+total);
+      
+      }
 
      //getters
       public String getMarca (){

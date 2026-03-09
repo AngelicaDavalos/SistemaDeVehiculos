@@ -31,6 +31,7 @@ public class  Main {
                     auto.mostrarInfo();
                     auto.tocarClaxon();
                     auto.mostrarPuertas();
+                    auto.aplicarDescuento();
 
                     break;
 
@@ -48,6 +49,7 @@ public class  Main {
                      camion.mostrarInfo();
                      camion.cargarMercancia();
                      camion.mostrarCapacidad();
+                     camion.aplicarDescuento();
 
                      break;
 
