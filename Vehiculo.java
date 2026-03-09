@@ -7,7 +7,7 @@ public class Vehiculo {
     
     //costructores 
     public Vehiculo(){
-        totalVehiculos++;
+       
     }
 
     public Vehiculo(String marca, String modelo, int anio, double precio){
