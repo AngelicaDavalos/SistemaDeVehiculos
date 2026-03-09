@@ -21,7 +21,7 @@ public class  Main {
                     System.out.println("--------Crear auto---------");
                     String marca = pd.pedirCadena("Ingresa la marca  ");
                     String modelo = pd.pedirCadena("Ingresa el modelo  ");
-                    int anio = pd.pedirEntero("Ingresa el año en que salio  ");
+                    int anio = pd.pedirEntero("Ingresa el año en que salio  ",2000,2026);
                     double precio = pd.pedirDecimal("Ingresa el precio  ");
                     int puertas = pd.pedirEntero("Ingrese el numero de puertas que tiene  ",2,16);
                     String combustible = pd.pedirCadena("Ingrese el tipo de combustible  ");
@@ -38,7 +38,7 @@ public class  Main {
                      System.out.println("----------Crear camión----------");
                      String marca1 = pd.pedirCadena("Ingresa la marca  ");
                      String modelo1 = pd.pedirCadena("Ingresa el modelo  ");
-                     int anio1 = pd.pedirEntero("Ingresa el año en que salio  ");
+                     int anio1 = pd.pedirEntero("Ingresa el año en que salio  ",2000,2026);
                      double precio1 = pd.pedirDecimal("Ingresa el precio  ");
                      int carga = pd.pedirEntero("Ingrese la capacidad de carga  ");
                      int ejes = pd.pedirEntero("Ingrese el numero de ejes  ",2,10);
