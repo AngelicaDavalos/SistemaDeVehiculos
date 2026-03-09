@@ -49,4 +49,18 @@ public class Vehiculo {
         System.out.println("El descuento es de "+descuento);
      }
 
+     //getters
+      public String getMarca (){
+        return this.marca;
+      }
+      public String getModelo(){
+        return this.modelo;
+      }
+      public int getAnio(){
+        return this.anio;
+      }
+      public double getPrecio(){
+        return this.precio;
+      }
+
 }
